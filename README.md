@@ -1,6 +1,6 @@
 # Continue Button
 
-Zeigt in der Control UI einen **Continue**-Button in der Kopfzeile der ausgewählten Session. Der Button ist nur sichtbar, solange diese Session einen laufenden Agent-Turn hat. Ein Klick stellt den Text `continue` für den nächsten Turn zurück.
+Zeigt in der Control UI einen **Continue**-Button mit Play-Icon direkt neben dem Senden-Button der ausgewählten Session. Der Button ist sichtbar, sobald in dieser Session nichts mehr läuft. Ein Klick sendet die Nachricht `continue`.
 
 ## Bauen und installieren
 

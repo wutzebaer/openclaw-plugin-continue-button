@@ -11,12 +11,10 @@ const manifestPath = join(root, "openclaw.plugin.json");
 rmSync(distDir, { recursive: true, force: true });
 mkdirSync(distDir, { recursive: true });
 
-for (const name of ["index.js", "contract.js"]) {
-  const srcPath = join(srcDir, name);
-  if (!existsSync(srcPath)) throw new Error(`missing src/${name}`);
-  writeFileSync(join(distDir, name), readFileSync(srcPath, "utf8"));
-  console.log(`  copied src/${name} -> dist/${name}`);
-}
+const indexPath = join(srcDir, "index.js");
+if (!existsSync(indexPath)) throw new Error("missing src/index.js");
+writeFileSync(join(distDir, "index.js"), readFileSync(indexPath, "utf8"));
+console.log("  copied src/index.js -> dist/index.js");
 
 const bundlePath = join(srcDir, "control-ui-bundle.js");
 if (!existsSync(bundlePath)) throw new Error("missing src/control-ui-bundle.js");

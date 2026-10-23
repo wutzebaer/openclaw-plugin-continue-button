@@ -3,12 +3,22 @@
   border: 1px solid var(--border, rgba(255, 255, 255, 0.16));
   background: var(--card, transparent);
   color: var(--text, inherit);
-  border-radius: 8px;
-  padding: 4px 10px;
-  font: inherit;
-  font-size: 12px;
-  line-height: 1.2;
+  border-radius: var(--radius-full, 999px);
+  width: var(--chat-composer-send-size, 36px);
+  min-width: var(--chat-composer-send-size, 36px);
+  height: var(--chat-composer-send-size, 36px);
+  padding: 0;
   cursor: pointer;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cb-btn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
 }
 
 .cb-btn:disabled {
