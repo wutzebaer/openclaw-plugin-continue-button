@@ -1,0 +1,23 @@
+{
+  "id": "continue-button",
+  "name": "Continue Button",
+  "description": "Adds a Continue button to the Control UI. Visible only while the current session is active; clicking it sends 'continue' to the chat.",
+  "version": "0.1.0",
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "contracts": {
+    "tools": []
+  },
+  "controlUi": {
+    "entry": "dist/control-ui/d709a9855eba3178/index.js",
+    "styles": [
+      "dist/control-ui/d709a9855eba3178/index.css"
+    ]
+  }
+}
